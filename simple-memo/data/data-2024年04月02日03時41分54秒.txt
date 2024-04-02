@@ -1,0 +1,17 @@
+<p class='comment' data-timestamp='2024年04月02日03時41分54秒'><time datetime='2024-04-02-03-41-54'>投稿日：2024年04月02日03時41分54秒</time>このメモ帳アプリで学べる事。<br />
+<br />
+<br />
+◆PHPの基本<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;変数の宣言・文字列との連結・展開法<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;連想配列変数の展開法（foreach）<br />
+<br />
+◆&nbsp;PHPの実際の使い方（フロントエンドと連携して使う方法）<br />
+　　非同期通信の基本&nbsp;//ajax通信・get通信&nbsp;▶ブラウザの一部だけを更新できる<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST送信の基本&nbsp;//&nbsp;スーパーグローバル変数<br />
+<br />
+◆&nbsp;ファイル操作<br />
+　　file_get_contents();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file_put_contents();<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//PHPは外部ファイルを操作できる<br />
+<br />
+</p>
