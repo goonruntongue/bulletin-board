@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") :
     date_default_timezone_set("asia/tokyo");
-    $timestamp = date("Y年m月d日h時i分s秒");
+    $timestamp = date("Y年m月d日H時i分s秒");
     $datetime = date("Y-m-d-h-i-s");
     $file = "data/data-{$timestamp}.txt";
     function esc_html($arg)
