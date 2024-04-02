@@ -2,4 +2,4 @@
 nl2br()-----new&nbsp;line&nbsp;to&nbsp;breakメソッドで<br />
 <br />
 文字列$string内の空白を&amp;nbsp;に置き換えるコードは<br />
-str_replace(&quot;&nbsp;&quot;,&quot;&amp;nbsp;&quot;$string)です。</p>
+str_replace(&quot;&nbsp;&quot;,&quot;&amp;nbsp;&quot;,$string)です。</p>

@@ -115,6 +115,7 @@ p.comment {
     margin: 1em 0;
     position: relative;
     border-radius: 8px;
+    word-break: break-all;
 }
 
 p.comment:nth-of-type(odd)::before {
@@ -160,10 +161,4 @@ input[type="submit"]:hover {
     background: var(--oddColor);
     color: var(--evenColor);
     font-weight: 500;
-}
-
-.res,
-.res * {
-    white-space: wrap;
-    word-break: break-all;
 }
