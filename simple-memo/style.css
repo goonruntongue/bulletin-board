@@ -161,3 +161,9 @@ input[type="submit"]:hover {
     color: var(--evenColor);
     font-weight: 500;
 }
+
+.res,
+.res * {
+    white-space: wrap;
+    word-break: break-all;
+}
