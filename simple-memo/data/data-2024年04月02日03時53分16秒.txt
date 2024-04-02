@@ -1,1 +1,1 @@
-<p class='comment' data-timestamp='2024年04月02日03時53分16秒'><time datetime='2024-04-02-03-53-16'>投稿日：2024年04月02日03時53分16秒</time>htmlspecialchars($_POST[&quot;comment&quot;])を使って、XSS（クロスサイトスクリプティング）を防止しておきます</p>
+<div class='comment' data-timestamp='2024年04月02日03時53分16秒'><time datetime='2024-04-02-03-53-16'>投稿日：2024年04月02日03時53分16秒</time>htmlspecialchars($_POST[&quot;comment&quot;])を使って、XSS（クロスサイトスクリプティング）を防止しておきます</div>

@@ -8,8 +8,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") :
     {
         return htmlspecialchars($arg, ENT_QUOTES);
     }
-    $comment = "<p class='comment' data-timestamp='{$timestamp}'>" . "<time datetime='{$datetime}'>投稿日：{$timestamp}</time>" . nl2br(str_replace(" ", "&nbsp;", esc_html($_POST["comment"]))) . "</p>";
-    file_put_contents($file, $comment, FILE_APPEND);
+    $comment = "<div class='comment' data-timestamp='{$timestamp}'>" . "<time datetime='{$datetime}'>投稿日：{$timestamp}</time>" . "<div class='contentsColumn'><div class='post'>" . nl2br(str_replace(" ", "&nbsp;", esc_html($_POST["comment"]))) . "</div>";
+    $Img = "";
+    if (isset($_FILES["image"]) && $_FILES["image"]["error"] === UPLOAD_ERR_OK) :
+        $files = $_FILES["image"];
+        $from = $files["tmp_name"];
+        $to = "uploads/" . basename($files["name"]);
+        move_uploaded_file($from, $to);
+        if ($_FILES["image"]["type"] == "video/mp4") :
+            $Img = "<div class='videoBox fractal'><video src={$to} controls loop autoplay muted></video></div>";
+        else :
+            $Img = "<div class='imageBox fractal'><img src={$to}></div>";
+        endif;
+    endif;
+    if ($Img != "") :
+        file_put_contents($file, $comment . $Img . "</div></div>", FILE_APPEND);
+    else :
+        file_put_contents($file, $comment . "</div></div>", FILE_APPEND);
+    endif;
 endif;
 //ファイル群を配列として取得
 $fileArr = glob("data/*.txt");

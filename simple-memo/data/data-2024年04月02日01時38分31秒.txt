@@ -1,7 +1,7 @@
-<p class='comment' data-timestamp='2024年04月02日01時38分31秒'><time datetime='2024-04-02-01-38-31'>投稿日：2024年04月02日01時38分31秒</time>textareaからの書き込みを受け取ると、ajax通信を通じて非同期にPOST送信がされread-write.phpを起動します。<br />
+<div class='comment' data-timestamp='2024年04月02日01時38分31秒'><time datetime='2024-04-02-01-38-31'>投稿日：2024年04月02日01時38分31秒</time>textareaからの書き込みを受け取ると、ajax通信を通じて非同期にPOST送信がされread-write.phpを起動します。<br />
 <br />
 read-write.phpでは受け取ったPOST送信の内容をタイムスタンプつきのdata-Y年m月d日h時i分s秒.txtというデータに書き込みます。<br />
 <br />
 さらにこれらの.txtファイルデータをすべて読み取りその内容を一つの文字列としてフロントエンド側に送り返します。<br />
 <br />
-フロントエンド側は$.ajax通信のsuccessプロパティのコールバック関数の引数としてデータを受け取り、div.res内に内容を出力します</p>
+フロントエンド側は$.ajax通信のsuccessプロパティのコールバック関数の引数としてデータを受け取り、div.res内に内容を出力します</div>

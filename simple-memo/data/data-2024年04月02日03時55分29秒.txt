@@ -1,5 +1,5 @@
-<p class='comment' data-timestamp='2024年04月02日03時55分29秒'><time datetime='2024-04-02-03-55-29'>投稿日：2024年04月02日03時55分29秒</time>改行を可能にするコードは<br />
+<div class='comment' data-timestamp='2024年04月02日03時55分29秒'><time datetime='2024-04-02-03-55-29'>投稿日：2024年04月02日03時55分29秒</time>改行を可能にするコードは<br />
 nl2br()-----new&nbsp;line&nbsp;to&nbsp;breakメソッドで<br />
 <br />
 文字列$string内の空白を&amp;nbsp;に置き換えるコードは<br />
-str_replace(&quot;&nbsp;&quot;,&quot;&amp;nbsp;&quot;,$string)です。</p>
+str_replace(&quot;&nbsp;&quot;,&quot;&amp;nbsp;&quot;,$string)です。</div>

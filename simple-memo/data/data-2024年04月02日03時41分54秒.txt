@@ -1,4 +1,4 @@
-<p class='comment' data-timestamp='2024年04月02日03時41分54秒'><time datetime='2024-04-02-03-41-54'>投稿日：2024年04月02日03時41分54秒</time>このメモ帳アプリで学べる事。<br />
+<div class='comment' data-timestamp='2024年04月02日03時41分54秒'><time datetime='2024-04-02-03-41-54'>投稿日：2024年04月02日03時41分54秒</time>このメモ帳アプリで学べる事。<br />
 <br />
 <br />
 ◆PHPの基本<br />
@@ -14,4 +14,4 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file_put_contents();<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//PHPは外部ファイルを操作できる<br />
 <br />
-</p>
+</div>

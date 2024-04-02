@@ -21,8 +21,9 @@
 
 <body>
     <div class="container">
-        <form action="backend.php" method="post">
+        <form action="backend.php" method="post" enctype="multipart/form-data">
             <textarea name="comment"></textarea>
+            <div class="fInput"><input type="file" name="image"></div>
             <input type="submit" value="書き込み">
         </form>
         <div class="flex updown">
@@ -42,19 +43,21 @@
             })
         })
     })
-    $("form").on("submit", e => {
+    $("form").on("submit", function(e) {
         e.preventDefault();
         if ($("textarea").val() == "") {
             alert("何かを書き込んでください");
             return;
         }
-        let data = $("form").serialize();
+        let formData = new FormData(this);
         $.ajax({
             type: "POST",
-            data: data,
+            data: formData,
+            contentType: false,
+            processData: false,
             url: "read-write.php",
             success: (data) => {
-                $("textarea").val("");
+                $("form").trigger("reset");
                 $(".res").empty().append(data);
                 $(".comment").each(function() {
                     $(this).append('<i class="fa-solid fa-trash"></i>');
@@ -68,11 +71,14 @@
             return;
         }
         let key = $(this).closest(".comment").data("timestamp");
+        let img = $(this).siblings(".contentsColumn").find("img");
+        let src = img.length ? img.attr("src") : "";
         $.ajax({
             type: "POST",
             url: "delete.php",
             data: {
-                timestamp: key
+                timestamp: key,
+                imagePath: src
             },
             success: (data) => {
                 $(".res").empty().append(data);
