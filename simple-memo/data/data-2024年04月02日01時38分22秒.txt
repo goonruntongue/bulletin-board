@@ -1,0 +1,14 @@
+<p class='comment' data-timestamp='2024年04月02日01時38分22秒'><time datetime='2024-04-02-01-38-22'>投稿日：2024年04月02日01時38分22秒</time>簡易メモアプリを自作しました。<br />
+<br />
+bulletin-board<br />
+│&nbsp;&nbsp;<br />
+│&nbsp;&nbsp;&nbsp;<br />
+└─simple-memo<br />
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;delete.php<br />
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;index.php<br />
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;read-write.php<br />
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;style.css<br />
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;└─data<br />
+<br />
+のという構造になっています</p>

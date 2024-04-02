@@ -1,0 +1,159 @@
+html {
+    --fontSet: "Poppins", "Noto Sans JP", sans-serif
+}
+
+body,
+textarea,
+* {
+    font-family: var(--fontSet);
+    box-sizing: border-box;
+}
+
+.res {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: min(960px, 96%);
+    margin: 1em auto;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    height: 150px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: coral;
+}
+
+time {
+    display: block;
+    width: fit-content;
+    /* background: orange; */
+    padding: 0.5em 0;
+    /* border-radius: 50px; */
+    border: 1px solid #ffffff;
+    border-left: 0;
+    border-right: 0;
+    /* border-top: 0; */
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+}
+
+p.comment {
+    /* margin-bottom: 2em; */
+    background: #4d1a72;
+    padding: 2em;
+    margin: 0;
+    color: #fff;
+}
+
+i.fa-solid.fa-trash {
+    float: right;
+    transform: translateY(16px);
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: min(240px, 50%);
+    padding: 1em;
+    border-radius: 4px;
+    border: 1px solid indigo;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: indigo;
+    color: #fff;
+}
+
+p.comment:nth-of-type(odd) {
+    background: var(--oddColor);
+    color: var(--evenColor);
+}
+
+p.comment:nth-of-type(odd) time {
+    border-color: var(--evenColor);
+    color: var(--evenColor);
+}
+
+p.comment:nth-of-type(even) {
+    background: var(--evenColor);
+    color: var(--oddColor);
+}
+
+p.comment:nth-of-type(even) time {
+    border-color: var(--oddColor);
+}
+
+html {
+    --oddColor: #3e284f;
+    --evenColor: #ffabd7;
+}
+
+.flex {
+    margin: 2em 0 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0.5em;
+}
+
+.flex i {
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #e4e4e4 30%, #c6c6c6 65%);
+}
+
+.flex i:hover {
+    color: #fff;
+}
+
+p.comment {
+    margin: 1em 0;
+    position: relative;
+    border-radius: 8px;
+}
+
+p.comment:nth-of-type(odd)::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    border-width: 20px 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--oddColor);
+}
+
+p.comment:nth-of-type(even)::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    border-width: 20px 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--evenColor);
+}
