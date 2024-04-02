@@ -1,0 +1,1 @@
+<div class='comment' data-timestamp='2024年04月02日06時38分04秒'><time datetime='2024-04-02-06-38-04'>投稿日：2024年04月02日06時38分04秒</time><div class='contentsColumn'><div class='post'>画像アップロードを有効化</div><div class='imageBox fractal'><img src=uploads/picture20.jpg></div></div></div>
