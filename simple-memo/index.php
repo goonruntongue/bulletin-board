@@ -21,16 +21,19 @@
 
 <body>
     <div class="container">
-        <form action="backend.php" method="post" enctype="multipart/form-data">
-            <textarea name="comment"></textarea>
-            <div class="fInput"><input type="file" name="image"></div>
-            <input type="submit" value="書き込み">
-        </form>
+
         <div class="flex updown">
             <i class="fa-solid fa-arrow-up-z-a"></i>
         </div>
         <div class="res">
         </div>
+    </div>
+    <div class="control">
+        <form action="backend.php" method="post" enctype="multipart/form-data">
+            <textarea name="comment"></textarea>
+            <div class="fInput"><input type="file" name="image"></div>
+            <input type="submit" value="書き込み">
+        </form>
     </div>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
