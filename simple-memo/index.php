@@ -44,6 +44,10 @@
     })
     $("form").on("submit", e => {
         e.preventDefault();
+        if ($("textarea").val() == "") {
+            alert("何かを書き込んでください");
+            return;
+        }
         let data = $("form").serialize();
         $.ajax({
             type: "POST",
